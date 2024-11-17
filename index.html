@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>História da IA no Judiciário</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- ARQUIVOS NECESSÁRIOS PARA O TIMELINE -->
+    <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+    <!-- ESTILOS CUSTOMIZADOS PARA MELHORAR A APARÊNCIA -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        .tl-timeline {
+            font-family: "Georgia", serif;
+        }
+        
+        /* Melhora a legibilidade do texto */
+        .tl-text-content {
+            background-color: rgba(255,255,255,0.95);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        /* Corrige a aparência dos títulos */
+        .tl-headline-date, 
+        .tl-headline {
+            color: #000 !important;
+            text-shadow: none !important;
+            font-weight: bold !important;
+        }
+        
+        /* Melhora a legibilidade do texto principal */
+        .tl-text .tl-text-content p {
+            color: #333 !important;
+            font-size: 16px !important;
+            line-height: 1.5 !important;
+        }
+
+        /* Ajusta o contraste das eras */
+        .tl-timeera {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <!-- DIV ONDE O TIMELINE SERÁ RENDERIZADO -->
+    <div id='timeline-embed' style="width: 100%; height: 800px"></div>
+
+    <script type="text/javascript">
+        // CONFIGURAÇÕES DA TIMELINE
+        var options = {
+            // Dimensões e layout
+            timenav_height: 250,          // Altura da barra de navegação
+            scale_factor: 3,              // Escala dos elementos
+            optimal_tick_width: 150,      // Espaçamento das marcações de tempo
+            slide_padding_lr: 100,        // Padding lateral dos slides
+            
+            // Estilo e aparência
+            slide_default_fade: "0%",     // Remove efeito fade
+            default_bg_color: "#ffffff",  // Cor de fundo padrão
+            
+            // Posicionamento
+            timenav_position: "top",      // Navegação no topo
+            
+            // Tipografia e idioma
+            font: "georgia-helvetica",    // Fonte padrão
+            language: "pt-br",            // Idioma
+            
+            // Navegação
+            hash_bookmark: false,         // Desativa bookmarks no URL
+            start_at_slide: 0,           // Começa no primeiro slide
+            
+            // Zoom
+            initial_zoom: 2,             // Nível inicial de zoom
+            zoom_sequence: [0.5, 1, 2, 3, 5, 8, 13, 21] // Níveis de zoom disponíveis
+        };
+
+        // CRIAR A TIMELINE
+        // Substitua o URL abaixo pelo link público da sua planilha do Google Sheets
+        window.timeline = new TL.Timeline('timeline-embed', 
+            'https://docs.google.com/spreadsheets/d/1B8bF-bDXwp8woqKFLQSTW24V0UWWUDkTwCQ08-0SluE/edit?gid=1215499948#gid=1215499948', 
+            options);
+    </script>
+</body>
+</html>
