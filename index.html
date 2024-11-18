@@ -1,121 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <title>Institucionalização da IA no Poder Judiciário Brasileiro</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Arquivos da Timeline -->
+    <title>Timeline IA no Judiciário</title>
     <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
-    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            font-family: 'Bitter', serif;
-        }
-
-        /* Estilo principal da timeline */
-        .tl-timeline {
-            font-family: 'Bitter', serif;
-        }
-
-        /* Estilo dos slides */
-        .tl-text-content {
-            background-color: rgba(255, 255, 255, 0.97);
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
-        }
-
-        /* Títulos */
-        .tl-headline-date, 
-        .tl-headline {
-            color: #2c3e50 !important;
-            text-shadow: none !important;
-            font-weight: 700 !important;
-            line-height: 1.4;
-        }
-
-        /* Texto dos slides */
-        .tl-text .tl-text-content p {
-            color: #34495e !important;
-            font-size: 16px !important;
-            line-height: 1.6 !important;
-            margin-bottom: 15px;
-        }
-
-        /* Eras */
-        .tl-timeera {
-            opacity: 0.85;
-        }
-
-        /* Navegação temporal */
-        .tl-timemarker-content-container {
-            background-color: #fff;
-            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
-        }
-
-        /* Cores para as diferentes eras */
-        .era-pre {
-            background-color: rgba(41, 128, 185, 0.2) !important;
-        }
-        .era-semi {
-            background-color: rgba(46, 204, 113, 0.2) !important;
-        }
-        .era-re {
-            background-color: rgba(155, 89, 182, 0.2) !important;
-        }
-
-        /* Melhoria na legibilidade das datas */
-        .tl-timeaxis-tick {
-            font-weight: 500;
-            color: #2c3e50 !important;
-        }
-    </style>
 </head>
 <body>
-    <!-- Container da Timeline -->
     <div id='timeline-embed' style="width: 100%; height: 800px"></div>
-
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
     <script type="text/javascript">
-        // Configurações da Timeline
-        var options = {
-            // Layout e dimensões
-            height: 800,
-            timenav_height: 200,
-            timenav_height_percentage: 25,
-            scale_factor: 2,
-            slide_padding_lr: 100,
-            optimal_tick_width: 150,
-
-            // Estilo e apresentação
-            timenav_position: "bottom",
-            default_bg_color: "#ffffff",
-            slide_default_fade: "0%",
-
-            // Fonte e idioma
-            font: "bitter-raleway",
-            language: "pt-br",
-
-            // Navegação e interação
-            hash_bookmark: false,
-            start_at_slide: 0,
-            initial_zoom: 2,
-            zoom_sequence: [0.5, 1, 2, 3, 5, 8],
-
-            // Scripts e análise
-            script_path: "",
-            ga_property_id: null
-        };
-
-        // Criação da Timeline
-        window.timeline = new TL.Timeline(
-            'timeline-embed',
-            'https://docs.google.com/spreadsheets/d/1dDNuuKE9WYiUvRu4YkLg8ZIVKcA835ABY-qlVCpwpRE/edit?gid=1810843870#gid=1810843870',
-            options
+        var timeline = new TL.Timeline('timeline-embed',
+            'https://docs.google.com/spreadsheets/d/1dDNuuKE9WYiUvRu4YkLg8ZIVKcA835ABY-qlVCpwpRE/edit?gid=1810843870#gid=1810843870'
         );
     </script>
 </body>
